@@ -31,5 +31,23 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <div>
+        <!-- Wrapper for slides -->
+        <div class="trending-wrapper">
+            <h1>Trending Products</h1>
+            <div class="">
+                @foreach ($products as $item)
+                <div class="trending-item">
+                    <img class="trending-img" src="{{$item['gallery']}}">
+                    <div class="">
+                        <h5>{{$item['name']}}</h5>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        
+    </div>
 </div>
 @endsection

@@ -19,14 +19,14 @@ class productSeeder extends Seeder
             "price"=>"15,000",
             "description"=>"Cleaning your smartphone – while always recommended – is now more important than ever. It’s estimated that we touch our phone every 12 minutes, so our hygiene needs to extend to the device we use most.",
             "category"=>"smart-phone",
-            "gallery"=>"https://www.lg.com/us/images/MC/features/clean-module-velvet.jpg",
+            "gallery"=>"https://www.lg.com/us/images/cell-phones/md07519424/gallery/desktop-01.jpg",
             ],
             [
                 "name" =>"LG UP7750 55'' UHD 4K TV",
                 "price"=>"45,000",
                 "description"=>"LG UHD TVs surpass your expectations every time. Experience lifelike picture quality and vivid colours with four times more pixel accuracy than Full HD.",
                 "category"=>"smart-TV",
-                "gallery"=>"https://www.lg.com/us/images/TV/features/OLED2021/LG_83in_C1_01_Intro_Desktop_textless.jpg",
+                "gallery"=>"https://www.lg.com/us/images/tvs/md08001890/gallery/D01.jpg",
             ],
             [
                 "name" =>"LG WQXGA",

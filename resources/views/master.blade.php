@@ -27,18 +27,35 @@
     {
         height: 400px !important;
     }
+    img.trending-img
+    {
+        height: 100px !important;
+    }
     .text-block {
         position: absolute;
         bottom: 20px;
+        left: 50%;
         right: 20px;
-        background-color: rgb(32, 31, 31);
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
         color: white;
         padding-left: 20px;
         padding-right: 20px;
     }
+    
     .custom-product
     {
         height: 600px !important;
+    }
+    .trending-item
+    {
+        float: left;
+        width:20%;
+    }
+    .trending-wrapper
+    {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 </style>
 <body>
