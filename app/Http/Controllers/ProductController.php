@@ -12,4 +12,9 @@ class ProductController extends Controller
     $data = Table_product::all();
     return view('product', ['products'=>$data]);
     }
+    function details($id)
+    {
+        $data = Table_product::find($id);
+        return view('detail', ['trending_products'=>$data]);
+    }
 }

@@ -57,6 +57,10 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    .detail-img
+    {
+        height: 200px;
+    }
 </style>
 <body>
     {{View::make('header')}}
