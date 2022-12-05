@@ -29,7 +29,7 @@ class productSeeder extends Seeder
                 "gallery"=>"https://www.lg.com/us/images/tvs/md08001890/gallery/D01.jpg",
             ],
             [
-                "name" =>"LG WQXGA",
+                "name" =>"LG WQXGA Laptop",
                 "price"=>"55,000",
                 "description"=>"WQXGA (2560x1600) display provides clear and vivid color, featuring twice the resolution of Full HD. So it enables you to perform tasks efficiently – such as typing, retouching or even coding.",
                 "category"=>"Laptop",

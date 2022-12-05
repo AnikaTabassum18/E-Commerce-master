@@ -61,6 +61,10 @@
     {
         height: 200px;
     }
+    .search-box
+    {
+        width: 500px !important;
+    }
 </style>
 <body>
     {{View::make('header')}}
