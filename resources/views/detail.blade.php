@@ -14,7 +14,10 @@
             <h4>Category : {{$trending_products['category']}}</h4>
             <p>Description : {{$trending_products['description']}}</p>
             <br><br>
-            <button type="submit" class="btn btn-success">Add Cart</button>
+            <form action="">
+                <input type="hidden" name="product_id" value="{{$trending_products['id']}}">
+                <button type="submit" class="btn btn-success">Add Cart</button>
+            </form>
             <br><br>
             <button class="btn btn-primary">Buy Now</button>
         </div>
