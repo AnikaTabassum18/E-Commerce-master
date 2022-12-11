@@ -19,6 +19,7 @@ Route::get('/logout', function () {
     Session::forget('user');
     return redirect('/login');
 });
+Route::view("/login","login");
 Route::post('/login', [UsersController::class,'login']);
 Route::get('/products', [ProductController::class,'index']);
 Route::get('/details/{id}', [ProductController::class,'details']);

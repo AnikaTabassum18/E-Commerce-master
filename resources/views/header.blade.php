@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\ProductController;
+// $total = ProductController::cartItem();
 $total = 0;
 if (Session::has('user')) {
     $total = ProductController::cartItem();
