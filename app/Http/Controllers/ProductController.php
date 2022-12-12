@@ -46,10 +46,11 @@ class ProductController extends Controller
     function cartList()
     {
         $userId = Session::get('user')['id'];
-        return DB::table('cart')
+        $data = DB::table('cart')
         ->join('table_products','cart.product_id','table_products.id')
         ->select('table_products.*')
         ->where('cart.user_id',$userId)
         ->get();
+        return view('cartList',['products'=>$data]);
     }
 }
