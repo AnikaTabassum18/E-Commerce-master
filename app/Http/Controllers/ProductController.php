@@ -58,4 +58,14 @@ class ProductController extends Controller
        Cart::destroy($id);
         return redirect('/cartList');
     }
+    function orderNow()
+    {
+        $userId = Session::get('user')['id'];
+        $total = DB::table('cart')
+        ->join('table_products','cart.product_id','table_products.id')
+        ->where('cart.user_id',$userId)
+        ->sum('table_products.price');
+        
+        return view('orderNow',['total'=>$total]);
+    }
 }
