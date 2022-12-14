@@ -6,7 +6,7 @@
             <tbody>
               <tr>
                 <td>Price</td>
-                <td>{{$total}} Taka</td>
+                <td>{{number_format($total,2)}} Taka</td>
               </tr>
               <tr>
                 <td>Tax</td>
@@ -18,7 +18,7 @@
               </tr>
               <tr>
                 <td>Total Price</td>
-                <td>{{$total + 70 }} Taka</td>
+                <td>{{number_format(($total+70),2)}} Taka</td>
               </tr>
             </tbody>
           </table>
