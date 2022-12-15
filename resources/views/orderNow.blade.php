@@ -22,22 +22,23 @@
                 </tr>
             </tbody>
         </table>
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="POST" action="orderplace">
+            @csrf
             <div class="form-group">
-                <textarea class="form-control" placeholder="Write Address"></textarea>
+                <textarea class="form-control" name="address" placeholder="Write Address"></textarea>
             </div>
             <div class="form-group">
                 <label class="control-label">Payment Method</label>
                 <p>
-                    <input type="radio" type="radio" name="payment">
+                    <input type="radio" type="radio" value="online" name="payment">
                     <span>Online payment</span>
                 </p>
                 <p>
-                    <input type="radio" type="radio" name="payment">
+                    <input type="radio" type="radio" value="emi" name="payment">
                     <span>EMI payment</span>
                 </p>
                 <p>
-                    <input type="radio" type="radio" name="payment">
+                    <input type="radio" type="radio" value="cash" name="payment">
                     <span>Cash on delivery</span>
                 </p>
             </div>
